@@ -74,3 +74,43 @@ if st.button("Run Agentic Analysis"):
     st.subheader("🔥 Trending Products:")
     for t in trending:
         st.write(f"- {t}")
+
+
+for t in trending:
+    st.write(f"- {t}")
+
+# ===== Explanation Section =====
+st.markdown("---")  
+st.markdown("""
+**How These Recommendations Are Made:**  
+Your results are ranked using **AI embeddings** that understand meaning, not just keywords.  
+We combine:  1. What data is required (can be simple for demo, advanced in real use):
+
+User-specific data (personalized):
+
+Past purchased items
+
+Past searched terms
+
+Recently viewed products
+
+Global / platform-wide data:
+
+Products most bought in the last week/month
+
+Items trending in your country or region
+
+Average product ratings & reviews
+
+2. How the AI “understands meaning”:
+
+Instead of matching just keywords (e.g., “red shoes”), it converts both your interests and all product descriptions into AI embeddings (vector form).
+
+These embeddings capture meaning, so if you liked “running sneakers,” it might also suggest “lightweight trainers” even if the words don’t match exactly.
+1. **Your past purchase/search history** (simulated for this demo)  
+2. **What’s trending globally** (latest popular products)  
+3. **AI semantic matching** to find the most relevant items for you.  
+
+This approach is inspired by techniques used by leading e-commerce companies to boost customer satisfaction and sales.
+""")
+
