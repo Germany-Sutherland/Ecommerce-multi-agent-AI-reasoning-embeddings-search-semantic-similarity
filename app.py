@@ -13,7 +13,12 @@ st.markdown("""
 2. Click **Run Agentic Analysis** to see recommendations & trending predictions.
 3. The AI agents will think out loud before final results.
 """)
-
+    st.markdown("""
+    **What This Means:**  
+    These products are ranked using semantic AI embeddings, meaning the AI understands the *context* of your interest 
+    and matches it to products that are not only in your chosen category but are also most relevant in meaning.  
+    This approach mimics advanced AI recommendation systems used by top e-commerce companies to improve conversions.
+    """)
 # ====== Load Data ======
 @st.cache_data
 def load_products():
